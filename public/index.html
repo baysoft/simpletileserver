@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Demo Map!</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="../lib/leaflet/leaflet.css">
+    <style>
+        #map {
+            height: 100%
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script src="../lib/leaflet/leaflet.js"></script>
+    <script>
+        // initialize the map
+        // fly to Jakarta!
+        var map = L.map('map').setView([-6.22610, 106.81516], 7);
+
+        // load a tile layer
+        L.tileLayer('../tiles/{z}/{x}/{y}.png',
+            {
+                attribution: 'Github <a href="https://github.com/baysoft">Bayu Angkasa</a>',
+                maxZoom: 9,
+                minZoom: 7
+            }).addTo(map);
+    </script>
+</body>
+
+</html>

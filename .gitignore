@@ -1,0 +1,9 @@
+# dependencies
+node_modules
+# build folder
+build
+dist
+# unnecessary file(s)
+npm-debug.log
+.env
+.DS_S

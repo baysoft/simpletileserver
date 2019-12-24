@@ -1,0 +1,15 @@
+{
+  "name": "simpletileserver",
+  "version": "1.0.0",
+  "description": "A Very Simpe Tile Server for local pre-processed tiles",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bayu Angkasa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
